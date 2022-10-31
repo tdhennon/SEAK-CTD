@@ -40,7 +40,7 @@ end
 
 %%
 
-dirs = genpath('../data/raw/'); %gets all the paths in the raw data directory
+dirs = genpath('data/raw/'); %gets all the paths in the raw data directory
 dirs = strsplit(dirs,':'); %splits up the single string into many directories
 
 reg_ctd = [210673 210674];
