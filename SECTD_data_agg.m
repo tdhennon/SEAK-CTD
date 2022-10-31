@@ -9,7 +9,6 @@ addpath('/Users/thennon/work/auxil/mfiles/plotting/')
 %%
 T = readtable('/Users/thennon/work/uaf/SEtrolling/data/SE_Trolling_Log.xlsx');
 
-%hi
 
 logb.date = datenum(table2array(T(:,1))); 
 logb.tod = table2array(T(:,3));
