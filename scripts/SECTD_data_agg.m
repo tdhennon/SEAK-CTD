@@ -1,13 +1,13 @@
 clear all; close all; 
 
-addpath('libraries/rbr-rsktools/');
-addpath('libraries/tdh/')
-addpath('libraries/m_map2/');
-addpath('libraries/plotting/colormap/')
-addpath('libraries/plotting/')
+addpath('../libraries/rbr-rsktools/');
+addpath('../libraries/tdh/')
+addpath('../libraries/m_map2/');
+addpath('../libraries/plotting/colormap/')
+addpath('../libraries/plotting/')
 
 %%
-T = readtable('data/SE_Trolling_Log.xlsx');
+T = readtable('../data/SE_Trolling_Log.xlsx');
 
 
 logb.date = datenum(table2array(T(:,1))); 
@@ -40,7 +40,7 @@ end
 
 %%
 
-dirs = genpath('data/raw/'); %gets all the paths in the raw data directory
+dirs = genpath('../data/raw/'); %gets all the paths in the raw data directory
 dirs = strsplit(dirs,':'); %splits up the single string into many directories
 
 reg_ctd = [210673 210674];
