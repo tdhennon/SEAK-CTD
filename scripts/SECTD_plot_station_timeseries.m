@@ -12,7 +12,7 @@ load([datadir fnames(1).name])
 
 %% Station time series
 
-STATION = 6;
+STATION = 1;
 ids = find(cast.statid == STATION);
 
 F = figure(3);clf
