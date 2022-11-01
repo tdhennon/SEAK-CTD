@@ -1,5 +1,7 @@
 clear all; close all; 
 
+%I added this online, does it appear on my CPU version?
+
 addpath('../libraries/tdh/')
 addpath('../libraries/m_map2/');
 addpath('../libraries/plotting/colormap/')
